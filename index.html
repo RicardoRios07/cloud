@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ventajas y Desventajas de Implementar un Clúster en la Nube</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #mindmap {
+            display: block;
+            width: 100vw;
+            height: 100vh;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.14.4/dist/style.css">
+</head>
+
+<body>
+    <svg id="mindmap"></svg>
+    <script src="https://cdn.jsdelivr.net/npm/d3@6.7.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/markmap-view@0.14.4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.14.4/dist/index.umd.min.js"></script>
+    <script>(() => { setTimeout(() => { const { markmap: Fe, mm: ur } = window, Fr = new Fe.Toolbar; Fr.attach(ur); const Dr = Fr.render(); Dr.setAttribute("style", "position:absolute;bottom:20px;right:20px"), document.body.append(Dr) }) })()</script>
+    <script>((B, S, M, _) => { const I = B(); window.mm = I.Markmap.create("svg#mindmap", (S || I.deriveOptions)(_), M) })(() => window.markmap, null, { "type": "heading", "depth": 0, "payload": { "lines": [1, 2] }, "content": "Ventajas y Desventajas de Implementar un Clúster en la Nube", "children": [{ "type": "heading", "depth": 1, "payload": { "lines": [2, 3] }, "content": "Ventajas", "children": [{ "type": "bullet_list", "depth": 2, "payload": { "lines": [3, 10] }, "content": "" }, { "type": "list_item", "depth": 3, "payload": { "lines": [3, 4] }, "content": "Escalabilidad", "children": [{ "type": "list_item", "depth": 4, "payload": { "lines": [4, 5] }, "content": "Aumento o disminución de recursos según demanda." }, { "type": "list_item", "depth": 4, "payload": { "lines": [5, 6] }, "content": "Manejo eficiente de picos de carga." }] }, { "type": "list_item", "depth": 3, "payload": { "lines": [6, 7] }, "content": "Alta Disponibilidad", "children": [{ "type": "list_item", "depth": 4, "payload": { "lines": [7, 8] }, "content": "Redundancia y replicación para minimizar tiempos de inactividad." }, { "type": "list_item", "depth": 4, "payload": { "lines": [8, 9] }, "content": "Tolerancia a fallos mejorada." }] }, { "type": "list_item", "depth": 3, "payload": { "lines": [9, 10] }, "content": "Flexibilidad", "children": [{ "type": "list_item", "depth": 4, "payload": { "lines": [10, 11] }, "content": "Diversidad de servicios y configuraciones según necesidades." }, { "type": "list_item", "depth": 4, "payload": { "lines": [11, 12] }, "content": "Fácil adaptación a cambios en los requisitos." }] }, { "type": "list_item", "depth": 3, "payload": { "lines": [12, 13] }, "content": "Costos Controlados", "children": [{ "type": "list_item", "depth": 4, "payload": { "lines": [13, 14] }, "content": "Pago por consumo real." }, { "type": "list_item", "depth": 4, "payload": { "lines": [14, 15] }, "content": "Eliminación de inversión inicial en infraestructura." }] }, { "type": "list_item", "depth": 3, "payload": { "lines": [15, 16] }, "content": "Mantenimiento Simplificado", "children": [{ "type": "list_item", "depth": 4, "payload": { "lines": [16, 17] }, "content": "Actualizaciones y parches gestionados por el proveedor." }, { "type": "list_item", "depth": 4, "payload": { "lines": [17, 18] }, "content": "Concentración en desarrollo en lugar de operaciones." }] }] }, { "type": "heading", "depth": 1, "payload": { "lines": [18, 19] }, "content": "Desventajas", "children": [{ "type": "bullet_list", "depth": 2, "payload": { "lines": [19, 28] }, "content": "" }, { "type": "list_item", "depth": 3, "payload": { "lines": [19, 20] }, "content": "Dependencia de la Conexión a Internet", "children": [{ "type": "list_item", "depth": 4, "payload": { "lines": [20, 21] }, "content": "La conectividad es crucial para acceder y administrar el clúster." }] }, { "type": "list_item", "depth": 3, "payload": { "lines": [21, 22] }, "content": "Seguridad", "children": [{ "type": "list_item", "depth": 4, "payload": { "lines": [22, 23] }, "content": "Datos sensibles pueden ser vulnerables si no se aseguran adecuadamente." }, { "type": "list_item", "depth": 4, "payload": { "lines": [23, 24] }, "content": "Riesgo potencial de fugas o brechas." }] }, { "type": "list_item", "depth": 3, "payload": { "lines": [24, 25] }, "content": "Rendimiento Variable", "children": [{ "type": "list_item", "depth": 4, "payload": { "lines": [25, 26] }, "content": "Latencia debido a la naturaleza virtualizada de la infraestructura." }, { "type": "list_item", "depth": 4, "payload": { "lines": [26, 27] }, "content": "Posible competencia por recursos con otros usuarios." }] }, { "type": "list_item", "depth": 3, "payload": { "lines": [27, 28] }, "content": "Personalización Limitada", "children": [{ "type": "list_item", "depth": 4, "payload": { "lines": [28, 29] }, "content": "Restricciones en la personalización profunda de hardware y software." }, { "type": "list_item", "depth": 4, "payload": { "lines": [29, 30] }, "content": "Adaptación a características específicas puede ser limitada." }] }, { "type": "list_item", "depth": 3, "payload": { "lines": [30, 31] }, "content": "Costos a Largo Plazo", "children": [{ "type": "list_item", "depth": 4, "payload": { "lines": [31, 32] }, "content": "A medida que se escala, los costos recurrentes pueden aumentar." }, { "type": "list_item", "depth": 4, "payload": { "lines": [32, 33] }, "content": "Posibilidad de exceder el presupuesto inicial." }] }, { "type": "list_item", "depth": 3, "payload": { "lines": [33, 34] }, "content": "Bloqueo de Proveedor", "children": [{ "type": "list_item", "depth": 4, "payload": { "lines": [34, 35] }, "content": "Cambiar de proveedor puede ser complejo debido a diferencias en tecnologías y formatos de datos." }] }, { "type": "list_item", "depth": 3, "payload": { "lines": [35, 36] }, "content": "Cumplimiento Normativo", "children": [{ "type": "list_item", "depth": 4, "payload": { "lines": [36, 37] }, "content": "Algunos sectores tienen regulaciones estrictas sobre la ubicación y seguridad de los datos." }] }] }] }, null)</script>
+</body>
+
+</html>
